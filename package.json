@@ -1,0 +1,25 @@
+{
+  "name": "cpio",
+  "version": "1.0.0",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
+  "bin": "dist/cli.js",
+  "license": "MIT",
+  "dependencies": {
+    "structured-buffer": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/yargs": "^17.0.32",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "dev": "tsx src/lib.ts",
+    "build": "tsc",
+    "start": "tsc && node ."
+  },
+  "optionalDependencies": {
+    "yargs": "^17.7.2"
+  }
+}
